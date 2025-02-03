@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collins Kiprotich Cheruiyot - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header bg-dark text-white py-4">
+        <div class="container text-center">
+            <!-- Profile Image -->
+            <div class="profile-img mb-3 d-flex justify-content-center">
+                <img src="icons/profile.png" alt="Profile Picture" class="img-fluid rounded-circle" width="150">
+            </div>
+            
+            <!-- Name -->
+            <h1 class="animated-title" id="name"></h1>
+
+            <!-- Welcome Message -->
+            <p id="welcome-message" class="welcome-text"></p>
+            
+            <!-- Navigation Bar -->
+            <nav class="dynamic-nav mt-4">
+                <ul class="nav justify-content-center">
+                    <nav class="dynamic-nav">
+                        <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="#techs" class="nav-link"><i class="fas fa-cogs"></i> Tech Stack</a>
+                        <a href="#skills" class="nav-link"><i class="fas fa-clipboard-list"></i> Skills</a>
+                        <a href="#testemonials" class="nav-link"><i class="fas fa-comment-alt"></i> Testemonials</a>
+                        <a href="#services" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+                        <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                        <a href="#blog" class="nav-link"> <i class="fas fa-blog"></i> Blog</a>
+                        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </nav>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="card">
+        <div class="card-content">
+            <h2 style="color: rgb(188, 6, 238); font-size: 24px; text-align: center;">About Me</h2>
+            <p id="intro-text">
+                Hi, I'm Collins Kiprotich Cheruiyot, a passionate and detail-oriented Computer Science undergraduate with a strong foundation in software development, data structures, and emerging technologies like AI and cybersecurity. Proficient in programming, web development, and database management, with a proven ability to design and implement innovative solutions. Skilled at teamwork, problem-solving, and continuously learning to stay ahead in the fast-evolving tech industry.
+            </p><br>
+            
+            <!-- Resume Download Section -->
+            <div class="resume-section">
+                <a href="files/resume.pdf" download class="resume-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+            
+            <button class="glow-button" onclick="scrollToSection('techs')">View Tech Stack</button>
+        </div>
+    </section>
+
+   <!-- Tech Stack Section -->
+   <section id="techs" class="card">
+    <div class="card-content">
+        <h2 style="color: rgb(188, 6, 238); font-size: 24px; text-align: center;">Tech Stack</h2>
+        <div class="tech-icons">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tech-item">
+                <span>HTML</span><img src="icons/html.png" alt="HTML Icon">
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tech-item">
+                <span>CSS</span><img src="icons/css.png" alt="CSS Icon">
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tech-item">
+                <span>JavaScript</span><img src="icons/js.png" alt="JavaScript Icon">
+            </a>
+            <a href="https://reactjs.org" target="_blank" class="tech-item">
+                <span>React</span><img src="icons/react.png" alt="React Icon">
+            </a>
+            <a href="https://www.python.org" target="_blank" class="tech-item">
+                <span>Python</span><img src="icons/python.png" alt="Python Icon">
+            </a>
+            <a href="https://flask.palletsprojects.com" target="_blank" class="tech-item">
+                <span>Flask</span><img src="icons/flask.png" alt="Flask Icon">
+            </a>
+            <a href="https://nodejs.org" target="_blank" class="tech-item">
+                <span>Node.js</span><img src="icons/nodejs.png" alt="Node.js Icon">
+            </a>
+            <a href="https://git-scm.com" target="_blank" class="tech-item">
+                <span>Git</span><img src="icons/git.png" alt="Git Icon">
+            </a>
+            <a href="https://www.docker.com" target="_blank" class="tech-item">
+                <span>Docker</span><img src="icons/docker.png" alt="Docker Icon">
+            </a>
+        </div>
+        <button style="text-align: center;" class="glow-button" onclick="scrollToSection('skills')">View Skills</button>
+    </div>
+</section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+        <div class="card-content">
+            <h2 style="color: rgb(188, 6, 238); font-size: 24px; text-align: center;">Skills</h2>
+            <p>Here are some of the skills I’ve mastered and continue to develop:</p>
+            <ul>
+                <li><i class="fab fa-html5 skill-icon"></i><strong>Frontend</strong>
+                     <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>React</li>
+                     </ul>
+                     
+                    </li>
+                <li><i class="fab fa-node skill-icon"></i><strong>Backend</strong> 
+                    <ul>
+                        <li>Java</li>
+                        <li>C#</li>
+                     </ul>
+                </li>
+                <li><i class="fas fa-database skill-icon"></i><strong>Database</strong> 
+                    <ul>
+                        <li>PostgreSQLL</li>
+                        <li>MySQL</li>
+                        <li>MSSQL</li>
+        
+                     </ul>
+      
+                </li>
+                <li><i class="fab fa-git skill-icon"></i><strong>Version Control:</strong>
+                    <ul>
+                        <li>Git</li>
+                        <li>Github</li>
+                    </ul>
+                    </li>
+                <li><i class="fas fa-cogs skill-icon"></i><strong>Deployment:</strong> 
+                    <ul>
+                        <li>Docker</li>
+                        <li>Heroku</li>
+                    </ul>
+                    </li>
+                <li><i class="fas fa-tools"></i><strong>Software Tools</strong> 
+                    <ul>
+                        <li><i class="fa-brands fa-docker"></i> Docker</li>
+                        <li><i class="fa-brands fa-jenkins"></i> Jenkins</li>
+                        <li><i class="fa-solid fa-code"></i> VS Code</li>
+                        <li><i class="fa-solid fa-lightbulb"></i> IntelliJ IDEA</li>
+                    </ul>
+                    
+                </li>
+                <li><i class="fa-solid fa-bug"></i><strong>Testing</strong> 
+                    <ul>
+                        <li><i class="fas fa-vial"></i> Postman <br> REST API Testing</li>
+
+                    </ul>
+                </li>
+                <li><i class="bi bi-tools"></i><strong>Soft Skills</strong><ul>
+                    <li><i class="fas fa-comments"></i> Communication</li>
+                    <li><i class="fas fa-handshake"></i> Teamwork</li>
+                    <li><i class="fas fa-puzzle-piece"></i> Problem-Solving</li>
+                    <li><i class="fas fa-rocket"></i> Creativity</li>
+                    <li><i class="fas fa-sync-alt"></i> Adaptability</li>
+                </ul></li>
+            </ul>
+            <button class="glow-button" onclick="scrollToSection('projects')">View Projects</button>
+        </div>
+    </section>
+    <section id="services">
+        <h2 style="color: rgb(188, 6, 238); font-size: 24px; text-align: center;">Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <i class="fas fa-code service-icon"></i>
+                <h3 style="color: green;">Web Development</h3>
+
+                <p>Full-stack web development using modern technologies like HTML, CSS, JavaScript, React, and Node.js to create responsive and dynamic websites.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3 style="color:green">Mobile App Development</h3>
+                <p>Development of cross-platform mobile applications with React Native, providing seamless user experiences on both Android and iOS devices.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-laptop-code service-icon"></i>
+                <h3 style="color: green;">Full Stack Development</h3>
+                <p>I offer end-to-end development of web applications, integrating both frontend and backend technologies. With expertise in building responsive, user-friendly interfaces using React and AngularJS, I create dynamic and interactive websites. On the backend, I leverage Java and the Spring Boot framework to develop robust and scalable systems. Additionally, I work with databases like MySQL, MongoDB, and PostgreSQL to ensure seamless data management and performance optimization across all layers of the application.</p>
+            </div>
+            
+            <div class="service">
+                <i class="fas fa-chart-line service-icon"></i>
+                <h3 style="color: green;">Data Analysis</h3>
+                <p>Providing insights and data-driven solutions by analyzing datasets using Python and various machine learning libraries for informed decision-making.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-cogs service-icon"></i>
+                <h3 style="color: green;">CI/CD Pipeline Automation</h3>
+                <p>Automating the continuous integration and continuous deployment processes to streamline software development workflows, ensuring faster and more reliable delivery of applications. Expertise in using Git and GitHub, along with Jenkins, Docker, and Kubernetes to build, test, and deploy applications efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="card">
+        <div class="card-content">
+            <h2 style="color: rgb(188, 6, 238); font-size: 24px; text-align: center;">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>STUDENT MANAGEMENT SYSTEM</h3>
+                    <p>A student management application using Java, Spring Boot Framework and PostgreSQL database.</p>
+                    <a href="https://github.com/CollinsEz34/Student.git" class="github-link">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>HOSPITAL MANAGEMENT SYSTEM</h3>
+                    <p>A Hospital Management System using C# and MS SQL Server.</p>
+                    <a href="https://github.com/CollinsEz34/HOSII.git" class="github-link">GitHub</a>
+                </div>
+            
+                <div class="project-card">
+                    <h3>E-commerce Coffee Order</h3>
+                    <p>An online coffee ordering system built with PHP.</p>
+                    <a href="https://github.com/devlinuskibet/E-commerce-Coffee-order" class="github-link">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>DEVOPS</h3>
+                    <p>A CI/CD pipeline for a JavaScript application using GitHub, Jenkins, 
+                        Docker, and Kubernetes.
+                        </p>
+                    <a href="https://github.com/CollinsEz34/FollowersCount.git" class="github-link">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>FULL STACK DEVELOPMENT </h3>
+                    <p>AN Inventory Management System with Spring Boot, React, and PostgreSQL and tested RESTful APIs using 
+                        Postman for endpoint validation.
+                        </p>
+                    <a href="" class="github-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+        <div class="card-content">
+            <h2 style="color: rgb(188, 6, 238); font-size: 24px; text-align: center;">Contact</h2>
+            <p>Let's work together! Feel free to reach out via the form below or connect with me on social media.</p>
+            <form id="contact-form">
+                <input type="text" name="from_name" id="from_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="glow-button">Send Message</button>
+            </form>
+            
+            <div class="social-icons">
+                <a href="https://github.com/CollinsEz34"><img src="icons/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/collins-kiprotich-cheruiyot-7a2729307"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://wa.me/+254723533972" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="sticky-footer">
+        <p>© 2025 Collins Kiprotich Cheruiyot. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.querySelector(`#${id}`).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const name = document.getElementById("name");
+            const welcomeMessage = document.getElementById("welcome-message");
+    
+            // Typing effect for name
+            name.innerText = "Collins Kiprotich Cheruiyot";
+    
+            // Stop typewriter after name is typed
+            name.style.borderRight = 'none';
+    
+            // After 3 seconds, show the welcome message with color change
+            setTimeout(() => {
+                welcomeMessage.innerText = "Welcome to my page";
+                welcomeMessage.style.animation = 'fadeIn 6s forwards'; // Slow down appearance
+    
+                // Apply random color effect on each letter
+                let letters = welcomeMessage.innerText.split('');
+                welcomeMessage.innerHTML = letters.map(letter => 
+                    `<span class="random-color">${letter}</span>`).join('');
+            }, 3000);
+        });
+    </script>
+
+    <!-- Include the EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS with your user ID
+        emailjs.init("61UvJmW1gtOWnXUpd");
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Send the email
+            emailjs.sendForm("service_7pa9qao", "template_uuj0nde", this)
+                .then(function(response) {
+                    console.log("Success:", response);
+                    alert("Your message has been sent!");
+                }, function(error) {
+                    console.log("Error:", error);
+                    alert("Oops! Something went wrong. Please try again.");
+                });
+        });
+    </script>
+</body>
+</html>
